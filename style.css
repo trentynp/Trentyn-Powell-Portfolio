@@ -10,6 +10,10 @@
     --secondary-shadow: #050200;
   }
 
+  body {
+    background-color: #464646;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -60,17 +64,17 @@
   }
 
   .bio-img {
-    width: 65%;
-    height: 60%;
-    background-color: #02fdfd;
-    border-radius: 11px;
+    width: 50%;
+    height: 35%;
+    border-radius: 10px;
     border-color: #02fdfd;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
+    background-color: transparent;
     padding: 5px; 
     margin: 10px;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 105px;
+  margin-right: 0px;
+  float: left;
     
   }
   
@@ -80,15 +84,27 @@
     padding: 1rem 6rem;
     color: var(--primary-color);
     justify-content: center;
+    
+  }
+
+  .about p {
+    font-size: 25px;
+    text-align: center;
   }
   
   .about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
   }
+  .projects-title {
+    margin-top: 50px;
+  }
   
   .projects {
     background-color: var(--bg-color);
+    flex: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 32px 0;
     margin-top: 2rem;
     color: #02fdfd;
@@ -96,8 +112,13 @@
   }
   
   .project-pic {
-    width: 65%;
-    height: 60%;
+    width: 45%;
+    height: 50%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
     background-color:var(--primary-color);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -106,7 +127,7 @@
   }
 
   a:link {
-    color: rgb(248, 3, 228);
+    color: #02fdfd;
     background-color: transparent;
     text-decoration: none;
   }
@@ -143,4 +164,8 @@
   .icon {
     width: 11.875rem;
     height: 11.25rem;
+  }
+  
+  .contact-info {
+    color:#02fdfd
   }
